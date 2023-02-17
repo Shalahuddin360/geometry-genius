@@ -43,7 +43,7 @@
                 <div class="dropdown dropdown-end">
                     <label tabindex="0" class="btn btn-ghost btn-circle avatar">
                         <div class="w-10 rounded-full">
-                            <img src="/images/stock/photo-1534528741775-53994a69daeb.jpg" />
+                            <img src="./images/IMG20191018160550.jpg" />
                         </div>
                     </label>
                     <ul tabindex="0"
@@ -62,23 +62,23 @@
         </div>
     </header>
     <main>
-        <section class="lg:px-12">
-            <div class="products-details w-[70%] bg-red-400 mt-5 grid  md:grid-cols-2 lg:grid-cols-3 gap-4">
+        <section class="lg:px-12 flex flex-col md:flex-row lg:flex-row">
+            <div class="products-details w-[70%] mx-auto  mt-5 grid  md:grid-cols-2 lg:grid-cols-3 gap-4">
                 <div class="card w-full bg-base-100 shadow-xl">
                     <figure class="px-10 pt-10">
                         <img class="w-full h-40" src="./images/triangle.png" alt="Shoes" class="rounded-xl" />
                     </figure>
                     <div class="card-body items-center text-center">
-                        <h2 class="card-title">Triangle</h2>
+                        <h2 class="card-title" id="first-name">Triangle</h2>
                         <p>Aria (A) : 0.5 X b X h</p>
                         <div class="flex  md:flex-1">
-                            <input class="mb-4 w-1/4 rounded-lg px-5 " type="text" id="" placeholder="b">
+                            <input class="mb-4 w-1/4 rounded-lg px-5 " type="text" id="triangle-firstInput-field" placeholder="b">
                             <p>cm</p>
-                            <input class="mb-4 w-1/4 rounded-lg px-5" type="text" id="" placeholder="h">
+                            <input class="mb-4 w-1/4 rounded-lg px-5" type="text" id="triangle-secondInput-field" placeholder="h">
                             <p>cm</p>
                         </div>
                         <div class="card-actions">
-                            <button class="btn btn-primary">Calculate</button>
+                            <button class="btn btn-primary" id="first-card">Calculate</button>
                         </div>
                     </div>
                 </div>
@@ -173,8 +173,30 @@
                     </div>
                 </div>
             </div>
-            <div class="card-details">
-
+            <div class="card-details w-full md:w-[25%] lg:w-[30%] mx-auto ">
+                 <h1 class="text-3xl text-center font-bold mt-5 underline">Aria Calculation</h1>
+                 <div class="overflow-x-auto">
+                    <table class="table w-full">
+                      <!-- head -->
+                      <thead>
+                        <tr>
+                          <th>No</th>
+                          <th>Name</th>
+                          <th>Area</th>
+                          <th>Favorite Color</th>
+                        </tr>
+                      </thead>
+                      <tbody id="table-container">
+                        <!-- row 1 -->
+                        <!-- <tr>
+                          <th>1</th>
+                          <td>Cy Ganderton</td>
+                          <td>Quality Control Specialist</td>
+                          <td>Blue</td>
+                        </tr> -->
+                      </tbody>
+                    </table>
+                  </div>
             </div>
         </section>
     </main>
