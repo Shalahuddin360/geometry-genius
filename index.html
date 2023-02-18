@@ -14,11 +14,16 @@
 
 <body>
     <header>
-        <div class="navbar bg-base-100 lg:px-12 shadow-2xl">
-            <div class="flex-1">
-                <a class="btn btn-ghost normal-case text-xl">daisyUI</a>
-            </div>
-            <div class="flex-none">
+        <div class="navbar bg-base-100 sm:px-8 lg:px-16 shadow-2xl">
+            <nav class="flex-1 md:flex-row lg:flex-row  justify-between">
+              <div>
+                <h2 class="text-5xl font-bold text-gray-800">Interactive</h2>
+                <h5 class="text-2xl text-gray-600">Geometry Genius</h5>
+              </div>
+                <button class="btn bg-blue-800 font-semibold text-white"><a href="#">BLOG</a></button>
+            </nav>
+
+            <!-- <div class="flex-none">
                 <div class="dropdown dropdown-end">
                     <label tabindex="0" class="btn btn-ghost btn-circle">
                         <div class="indicator">
@@ -58,7 +63,7 @@
                         <li><a>Logout</a></li>
                     </ul>
                 </div>
-            </div>
+            </div> -->
         </div>
     </header>
     <main>
@@ -72,13 +77,15 @@
                         <h2 class="card-title" id="first-name">Triangle</h2>
                         <p>Aria (A) : 0.5 X b X h</p>
                         <div class="flex  md:flex-1">
-                            <input class="mb-4 w-1/4 rounded-lg px-5 " type="text" id="triangle-firstInput-field" placeholder="b">
+                            <input class="mb-4 w-1/4 rounded-lg px-5 " type="text" id="triangle-firstInput-field"
+                                placeholder="b">
                             <p>cm</p>
-                            <input class="mb-4 w-1/4 rounded-lg px-5" type="text" id="triangle-secondInput-field" placeholder="h">
+                            <input class="mb-4 w-1/4 rounded-lg px-5" type="text" id="triangle-secondInput-field"
+                                placeholder="h">
                             <p>cm</p>
                         </div>
                         <div class="card-actions">
-                            <button class="btn btn-primary" id="first-card">Calculate</button>
+                            <button class="btn btn-primary" id="btn-first">Calculate</button>
                         </div>
                     </div>
                 </div>
@@ -87,16 +94,18 @@
                         <img class="w-full h-40" src="./images/rectangle.png" alt="Shoes" class="rounded-xl" />
                     </figure>
                     <div class="card-body items-center text-center">
-                        <h2 class="card-title">Rectangle</h2>
+                        <h2 class="card-title" id="second-name">Rectangle</h2>
                         <p>Aria (A) : w X l</p>
                         <div class="flex  md:flex-1">
-                            <input class="mb-4 w-1/4 rounded-lg px-5 " type="text" id="" placeholder="w">
+                            <input class="mb-4 w-1/4 rounded-lg px-5 " type="text" id="rectangle-firstInput-field"
+                                placeholder="w">
                             <p>cm</p>
-                            <input class="mb-4 w-1/4 rounded-lg px-5" type="text" id="" placeholder="l">
+                            <input class="mb-4 w-1/4 rounded-lg px-5" type="text" id="rectangle-secondInput-field"
+                                placeholder="l">
                             <p>cm</p>
                         </div>
                         <div class="card-actions">
-                            <button class="btn btn-primary">Calculate</button>
+                            <button class="btn btn-primary" id="btn-second">Calculate</button>
                         </div>
                     </div>
                 </div>
@@ -105,16 +114,18 @@
                         <img class="w-full h-40" src="./images/parallelogram.png" alt="Shoes" class="rounded-xl" />
                     </figure>
                     <div class="card-body items-center text-center">
-                        <h2 class="card-title">Parallelogram</h2>
+                        <h2 class="card-title" id="third-name">Parallelogram</h2>
                         <p>Aria (A) : b X h</p>
                         <div class="flex  md:flex-1">
-                            <input class="mb-4 w-1/4 rounded-lg px-5 " type="text" id="" placeholder="b">
+                            <input class="mb-4 w-1/4 rounded-lg px-5 " type="text" id="parallelogram-firstInput-field"
+                                placeholder="b">
                             <p>cm</p>
-                            <input class="mb-4 w-1/4 rounded-lg px-5" type="text" id="" placeholder="h">
+                            <input class="mb-4 w-1/4 rounded-lg px-5" type="text" id="parallelogram-secondInput-field"
+                                placeholder="h">
                             <p>cm</p>
                         </div>
                         <div class="card-actions">
-                            <button class="btn btn-primary">Calculate</button>
+                            <button class="btn btn-primary" id="btn-third">Calculate</button>
                         </div>
                     </div>
                 </div>
@@ -123,16 +134,18 @@
                         <img class="w-full h-40" src="./images/rhombus.png" alt="Shoes" class="rounded-xl" />
                     </figure>
                     <div class="card-body items-center text-center">
-                        <h2 class="card-title">Rhombus</h2>
+                        <h2 class="card-title" id="fourth-name">Rhombus</h2>
                         <p>Aria (A) :0.5 X d1 X d2</p>
                         <div class="flex  md:flex-1">
-                            <input class="mb-4 w-1/4 rounded-lg px-5 " type="text" id="" placeholder="d1">
+                            <input class="mb-4 w-1/4 rounded-lg px-5 " type="text" id="rhombus-firstInput-field"
+                                placeholder="d1">
                             <p>cm</p>
-                            <input class="mb-4 w-1/4 rounded-lg px-5" type="text" id="" placeholder="d2">
+                            <input class="mb-4 w-1/4 rounded-lg px-5" type="text" id="rhombus-secondInput-field"
+                                placeholder="d2">
                             <p>cm</p>
                         </div>
                         <div class="card-actions">
-                            <button class="btn btn-primary">Calculate</button>
+                            <button class="btn btn-primary" id="btn-fourth">Calculate</button>
                         </div>
                     </div>
                 </div>
@@ -141,16 +154,18 @@
                         <img class="w-full h-40" src="./images/pentagon.png" alt="Shoes" class="rounded-xl" />
                     </figure>
                     <div class="card-body items-center text-center">
-                        <h2 class="card-title">Pentagon</h2>
+                        <h2 class="card-title" id="fifth-name">Pentagon</h2>
                         <p>Aria (A) : 0.5 X p X b</p>
                         <div class="flex  md:flex-1">
-                            <input class="mb-4 w-1/4 rounded-lg px-5 " type="text" id="" placeholder="p">
+                            <input class="mb-4 w-1/4 rounded-lg px-5 " type="text" id="pentagon-firstInput-field"
+                                placeholder="p">
                             <p>cm</p>
-                            <input class="mb-4 w-1/4 rounded-lg px-5" type="text" id="" placeholder="x">
+                            <input class="mb-4 w-1/4 rounded-lg px-5" type="text" id="pentagon-secondInput-field"
+                                placeholder="x">
                             <p>cm</p>
                         </div>
                         <div class="card-actions">
-                            <button class="btn btn-primary">Calculate</button>
+                            <button class="btn btn-primary" id="btn-fourth">Calculate</button>
                         </div>
                     </div>
                 </div>
@@ -159,44 +174,46 @@
                         <img class="w-full h-40" src="./images/ellipse.png" alt="Shoes" class="rounded-xl" />
                     </figure>
                     <div class="card-body items-center text-center">
-                        <h2 class="card-title">Ellipse</h2>
+                        <h2 class="card-title" id="sixth-name">Ellipse</h2>
                         <p>Aria (A) : 3.14ab</p>
                         <div class="flex  md:flex-1">
-                            <input class="mb-4 w-1/4 rounded-lg px-5 " type="text" id="" placeholder="a">
+                            <input class="mb-4 w-1/4 rounded-lg px-5 " type="text" id="ellipse-firstInput-field"
+                                placeholder="a">
                             <p>cm</p>
-                            <input class="mb-4 w-1/4 rounded-lg px-5" type="text" id="" placeholder="b">
+                            <input class="mb-4 w-1/4 rounded-lg px-5" type="text" id="ellipse-secondInput-field"
+                                placeholder="b">
                             <p>cm</p>
                         </div>
                         <div class="card-actions">
-                            <button class="btn btn-primary">Calculate</button>
+                            <button class="btn btn-primary" id="btn-sixth">Calculate</button>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="card-details w-full md:w-[25%] lg:w-[30%] mx-auto ">
-                 <h1 class="text-3xl text-center font-bold mt-5 underline">Aria Calculation</h1>
-                 <div class="overflow-x-auto">
+                <h1 class="text-3xl text-center font-bold mt-5 text-gray-800 underline">Aria Calculation</h1>
+                <div class="overflow-x-auto">
                     <table class="table w-full">
-                      <!-- head -->
-                      <thead>
-                        <tr>
-                          <th>No</th>
-                          <th>Name</th>
-                          <th>Area</th>
-                          <th>Favorite Color</th>
-                        </tr>
-                      </thead>
-                      <tbody id="table-container">
-                        <!-- row 1 -->
-                        <!-- <tr>
+                        <!-- head -->
+                        <thead>
+                            <tr>
+                                <th>No</th>
+                                <th>Name</th>
+                                <th>Area</th>
+                                <th>Favorite Color</th>
+                            </tr>
+                        </thead>
+                        <tbody id="table-container">
+                            <!-- row 1 -->
+                            <!-- <tr>
                           <th>1</th>
                           <td>Cy Ganderton</td>
                           <td>Quality Control Specialist</td>
                           <td>Blue</td>
                         </tr> -->
-                      </tbody>
+                        </tbody>
                     </table>
-                  </div>
+                </div>
             </div>
         </section>
     </main>
