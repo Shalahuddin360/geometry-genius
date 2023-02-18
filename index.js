@@ -25,11 +25,9 @@ document.getElementById('btn-second').addEventListener('click', function () {
     const secondName = getTextElementById('second-name')
     const rectangleFirstInputFieldValue = getFirstInputFieldValueById('rectangle-firstInput-field');
     const rectangleSecondInputFieldValue = getSecondInputFieldValueById('rectangle-secondInput-field');
-    if (
-        rectangleFirstInputFieldValue == "" ||
-        rectangleSecondInputFieldValue == "" ||
+    if ((rectangleFirstInputFieldValue == "" || rectangleSecondInputFieldValue == "" ||
         rectangleFirstInputFieldValue <= 0 ||
-        rectangleSecondInputFieldValue <= 0
+        rectangleSecondInputFieldValue <= 0)
     ) {
         return alert("please enter any valid number");
     }
@@ -108,7 +106,7 @@ document.getElementById('btn-fifth').addEventListener('click', function () {
         return alert("please enter any valid number");
     }
     // multiply
-    const pentagonAreaTotal =(0.5 * pentagonFirstInputFieldValue * pentagonSecondInputFieldValue).toFixed(2);
+    const pentagonAreaTotal = (0.5 * pentagonFirstInputFieldValue * pentagonSecondInputFieldValue).toFixed(2);
 
     //show the data
     displayData(fifthName, pentagonAreaTotal);
@@ -132,7 +130,7 @@ document.getElementById('btn-sixth').addEventListener('click', function () {
         return alert("please enter any valid number");
     }
     // multiply
-    const ellipseAreaTotal =(3.14 * ellipseFirstInputFieldValue * ellipseSecondInputFieldValue).toFixed(2);
+    const ellipseAreaTotal = (3.14 * ellipseFirstInputFieldValue * ellipseSecondInputFieldValue).toFixed(2);
 
     //show the data
     displayData(sixthName, ellipseAreaTotal);
@@ -150,6 +148,7 @@ function getTextElementById(elementId) {
 function getFirstInputFieldValueById(inputFieldFirstId) {
 
 
+
     const geometryOfFirstInputField = document.getElementById(inputFieldFirstId);
     const geometryOfFirstInputFieldValueString = geometryOfFirstInputField.value;
     const geometryOfFirstInputFieldValue = parseFloat(geometryOfFirstInputFieldValueString);
@@ -158,6 +157,9 @@ function getFirstInputFieldValueById(inputFieldFirstId) {
 
 }
 function getSecondInputFieldValueById(inputFieldSecondId) {
+
+
+
     const geometryOfSecondInputField = document.getElementById(inputFieldSecondId);
     const geometryOfSecondInputFieldValueString = geometryOfSecondInputField.value;
     const geometryOfSecondInputFieldValue = parseFloat(geometryOfSecondInputFieldValueString);
@@ -183,3 +185,24 @@ function displayData(geometryOfName, geometryOfAreaTotal) {
 function disabledButton(id) {
     document.getElementById(id).setAttribute('disabled', true);
 }
+let cards = document.querySelectorAll(".card");
+
+
+// Define a function to generate a random color
+function getRandomColor() {
+    let letters = "0123456789ABCDEF";
+    let color = "#";
+    for (let i = 0; i < 6; i++) {
+        color += letters[Math.floor(Math.random() * 16)];
+    }
+    return color;
+}
+
+cards.forEach(function (card) {
+    card.addEventListener("mouseenter", function () {
+        // Get a random color
+        let randomColor = getRandomColor();
+        // Set the background color of the card to the random color
+        card.style.backgroundColor = randomColor;
+    });
+});
