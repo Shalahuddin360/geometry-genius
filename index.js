@@ -9,7 +9,7 @@ document.getElementById('btn-first').addEventListener('click', function () {
     const triangleSecondInputFieldValue = getSecondInputFieldValueById('triangle-secondInput-field');
 
     // multiply
-    const triangleAreaTotal = 0.5 * triangleFirstInputFieldValue * triangleSecondInputFieldValue;
+    const triangleAreaTotal = (0.5 * triangleFirstInputFieldValue * triangleSecondInputFieldValue).toFixed(2);
 
     //show the data
     displayData(firstName, triangleAreaTotal);
@@ -34,7 +34,7 @@ document.getElementById('btn-second').addEventListener('click', function () {
         return alert("please enter any valid number");
     }
     // multiply
-    const rectangleAreaTotal = rectangleFirstInputFieldValue * rectangleSecondInputFieldValue;
+    const rectangleAreaTotal = (rectangleFirstInputFieldValue * rectangleSecondInputFieldValue).toFixed(2);
 
     //show the data
     displayData(secondName, rectangleAreaTotal);
@@ -60,7 +60,7 @@ document.getElementById('btn-third').addEventListener('click', function () {
         return alert("please enter any valid number");
     }
     // multiply
-    const parallelogramAreaTotal = parallelogramFirstInputFieldValue * parallelogramSecondInputFieldValue;
+    const parallelogramAreaTotal = (parallelogramFirstInputFieldValue * parallelogramSecondInputFieldValue).toFixed(2);
 
     //show the data
     displayData(thirdName, parallelogramAreaTotal);
@@ -84,7 +84,7 @@ document.getElementById('btn-fourth').addEventListener('click', function () {
         return alert("please enter any valid number");
     }
     // multiply
-    const rhombusAreaTotal = 0.5 * rhombusFirstInputFieldValue * rhombusSecondInputFieldValue;
+    const rhombusAreaTotal = (0.5 * rhombusFirstInputFieldValue * rhombusSecondInputFieldValue).toFixed(2);
 
     //show the data
     displayData(fourthName, rhombusAreaTotal);
@@ -108,7 +108,7 @@ document.getElementById('btn-fifth').addEventListener('click', function () {
         return alert("please enter any valid number");
     }
     // multiply
-    const pentagonAreaTotal =0.5 * pentagonFirstInputFieldValue * pentagonSecondInputFieldValue;
+    const pentagonAreaTotal =(0.5 * pentagonFirstInputFieldValue * pentagonSecondInputFieldValue).toFixed(2);
 
     //show the data
     displayData(fifthName, pentagonAreaTotal);
@@ -132,7 +132,7 @@ document.getElementById('btn-sixth').addEventListener('click', function () {
         return alert("please enter any valid number");
     }
     // multiply
-    const ellipseAreaTotal =0.5 * ellipseFirstInputFieldValue * ellipseSecondInputFieldValue;
+    const ellipseAreaTotal =(3.14 * ellipseFirstInputFieldValue * ellipseSecondInputFieldValue).toFixed(2);
 
     //show the data
     displayData(sixthName, ellipseAreaTotal);

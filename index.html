@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Geometry Genius Website Test</title>
+    <title>Geometry Genius Website </title>
     <!--  tailwind CSS  -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@2.50.1/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
@@ -13,6 +13,7 @@
 </head>
 
 <body>
+    <!-- header start from here  -->
     <header>
         <div class="navbar bg-base-100 sm:px-8 lg:px-16 shadow-2xl">
             <nav class="flex-1 md:flex-row lg:flex-row  justify-between">
@@ -20,67 +21,31 @@
                 <h2 class="text-5xl font-bold text-gray-800">Interactive</h2>
                 <h5 class="text-2xl text-gray-600">Geometry Genius</h5>
               </div>
-                <button class="btn bg-blue-800 font-semibold text-white"><a href="#">BLOG</a></button>
+                <button class="btn bg-blue-800 font-semibold text-white"><a href="./blog/index.html">BLOG</a></button>
             </nav>
-
-            <!-- <div class="flex-none">
-                <div class="dropdown dropdown-end">
-                    <label tabindex="0" class="btn btn-ghost btn-circle">
-                        <div class="indicator">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
-                                stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
-                            </svg>
-                            <span class="badge badge-sm indicator-item">8</span>
-                        </div>
-                    </label>
-                    <div tabindex="0" class="mt-3 card card-compact dropdown-content w-52 bg-base-100 shadow">
-                        <div class="card-body">
-                            <span class="font-bold text-lg">8 Items</span>
-                            <span class="text-info">Subtotal: $999</span>
-                            <div class="card-actions">
-                                <button class="btn btn-primary btn-block">View cart</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="dropdown dropdown-end">
-                    <label tabindex="0" class="btn btn-ghost btn-circle avatar">
-                        <div class="w-10 rounded-full">
-                            <img src="./images/IMG20191018160550.jpg" />
-                        </div>
-                    </label>
-                    <ul tabindex="0"
-                        class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
-                        <li>
-                            <a class="justify-between">
-                                Profile
-                                <span class="badge">New</span>
-                            </a>
-                        </li>
-                        <li><a>Settings</a></li>
-                        <li><a>Logout</a></li>
-                    </ul>
-                </div>
-            </div> -->
         </div>
     </header>
+    <!-- header end from here  -->
+    <!-- main start from here  -->
     <main>
+         <!-- main section start here  -->
         <section class="lg:px-12 flex flex-col md:flex-row lg:flex-row">
-            <div class="products-details w-[60%] mx-auto  mt-5 grid  md:grid-cols-2 lg:grid-cols-3 gap-4">
+
+            <div class="geometric-details w-[65%] mx-auto  mt-5 grid  md:grid-cols-2 lg:grid-cols-3 gap-4">
+
+                <!-- first card start from here  -->
                 <div class="card w-full bg-base-100 shadow-xl">
                     <figure class="px-10 pt-10">
                         <img class="w-full h-40" src="./images/triangle.png" alt="Shoes" class="rounded-xl" />
                     </figure>
                     <div class="card-body items-center text-center">
                         <h2 class="card-title" id="first-name">Triangle</h2>
-                        <p>Aria (A) : 0.5 X b X h</p>
+                        <p>Aria (A) : 0.5 &#215; b &#215; h</p>
                         <div class="flex  md:flex-1">
-                            <input class="mb-4 w-1/4 rounded-lg px-5 " type="text" id="triangle-firstInput-field"
+                            <input class="mb-4 w-2/4 rounded-lg px-3 " type="text" id="triangle-firstInput-field"
                                 placeholder="b">
                             <p>cm</p>
-                            <input class="mb-4 w-1/4 rounded-lg px-5" type="text" id="triangle-secondInput-field"
+                            <input class="mb-4 w-2/4 rounded-lg px-3" type="text" id="triangle-secondInput-field"
                                 placeholder="h">
                             <p>cm</p>
                         </div>
@@ -89,18 +54,22 @@
                         </div>
                     </div>
                 </div>
+                <!-- first card end from here  -->
+
+                <!-- second card start from here  -->
+
                 <div class="card w-full bg-base-100 shadow-xl">
                     <figure class="px-10 pt-10">
                         <img class="w-full h-40" src="./images/rectangle.png" alt="Shoes" class="rounded-xl" />
                     </figure>
                     <div class="card-body items-center text-center">
                         <h2 class="card-title" id="second-name">Rectangle</h2>
-                        <p>Aria (A) : w X l</p>
+                        <p>Aria (A) : w &#215; l</p>
                         <div class="flex  md:flex-1">
-                            <input class="mb-4 w-1/4 rounded-lg px-5 " type="text" id="rectangle-firstInput-field"
+                            <input class="mb-4 w-2/4 rounded-lg px-3 " type="text" id="rectangle-firstInput-field"
                                 placeholder="w">
                             <p>cm</p>
-                            <input class="mb-4 w-1/4 rounded-lg px-5" type="text" id="rectangle-secondInput-field"
+                            <input class="mb-4 w-2/4 rounded-lg px-3" type="text" id="rectangle-secondInput-field"
                                 placeholder="l">
                             <p>cm</p>
                         </div>
@@ -109,18 +78,21 @@
                         </div>
                     </div>
                 </div>
+                <!-- second card end from here  -->
+                <!-- third card start from here  -->
+                 
                 <div class="card w-full bg-base-100 shadow-xl">
                     <figure class="px-10 pt-10">
                         <img class="w-full h-40" src="./images/parallelogram.png" alt="Shoes" class="rounded-xl" />
                     </figure>
                     <div class="card-body items-center text-center">
                         <h2 class="card-title" id="third-name">Parallelogram</h2>
-                        <p>Aria (A) : b X h</p>
+                        <p>Aria (A) : b &#215; h</p>
                         <div class="flex  md:flex-1">
-                            <input class="mb-4 w-1/4 rounded-lg px-5 " type="text" id="parallelogram-firstInput-field"
+                            <input class="mb-4 w-2/4 rounded-lg px-3" type="text" id="parallelogram-firstInput-field"
                                 placeholder="b">
                             <p>cm</p>
-                            <input class="mb-4 w-1/4 rounded-lg px-5" type="text" id="parallelogram-secondInput-field"
+                            <input class="mb-4 w-2/4 rounded-lg px-3" type="text" id="parallelogram-secondInput-field"
                                 placeholder="h">
                             <p>cm</p>
                         </div>
@@ -129,18 +101,21 @@
                         </div>
                     </div>
                 </div>
+                <!-- third card end from here  -->
+                <!-- fourth card start from here  -->
+                 
                 <div class="card w-full bg-base-100 shadow-xl">
                     <figure class="px-10 pt-10">
                         <img class="w-full h-40" src="./images/rhombus.png" alt="Shoes" class="rounded-xl" />
                     </figure>
                     <div class="card-body items-center text-center">
                         <h2 class="card-title" id="fourth-name">Rhombus</h2>
-                        <p>Aria (A) :0.5 X d1 X d2</p>
+                        <p>Aria (A) : 0.5 &#215; d1 &#215; d2</p>
                         <div class="flex  md:flex-1">
-                            <input class="mb-4 w-1/4 rounded-lg px-5 " type="text" id="rhombus-firstInput-field"
+                            <input class="mb-4 w-2/4 rounded-lg px-3 " type="text" id="rhombus-firstInput-field"
                                 placeholder="d1">
                             <p>cm</p>
-                            <input class="mb-4 w-1/4 rounded-lg px-5" type="text" id="rhombus-secondInput-field"
+                            <input class="mb-4 w-2/4 rounded-lg px-3" type="text" id="rhombus-secondInput-field"
                                 placeholder="d2">
                             <p>cm</p>
                         </div>
@@ -149,19 +124,22 @@
                         </div>
                     </div>
                 </div>
+                <!-- fourth card end from here  -->
+                <!-- fifth card start from here  -->
+                 
                 <div class="card w-full bg-base-100 shadow-xl">
                     <figure class="px-10 pt-10">
                         <img class="w-full h-40" src="./images/pentagon.png" alt="Shoes" class="rounded-xl" />
                     </figure>
                     <div class="card-body items-center text-center">
                         <h2 class="card-title" id="fifth-name">Pentagon</h2>
-                        <p>Aria (A) : 0.5 X p X b</p>
+                        <p>Aria (A) : 0.5 &#215; p &#215; b</p>
                         <div class="flex  md:flex-1">
-                            <input class="mb-4 w-1/4 rounded-lg px-5 " type="text" id="pentagon-firstInput-field"
+                            <input class="mb-4 w-2/4 rounded-lg px-3" type="text" id="pentagon-firstInput-field"
                                 placeholder="p">
                             <p>cm</p>
-                            <input class="mb-4 w-1/4 rounded-lg px-5" type="text" id="pentagon-secondInput-field"
-                                placeholder="x">
+                            <input class="mb-4 w-2/4 rounded-lg px-3" type="text" id="pentagon-secondInput-field"
+                                placeholder="b">
                             <p>cm</p>
                         </div>
                         <div class="card-actions">
@@ -169,18 +147,23 @@
                         </div>
                     </div>
                 </div>
+                <!-- fifth card end from here  -->
+
+                <!-- sixth card start from here  -->
+
+
                 <div class="card w-full bg-base-100 shadow-xl">
                     <figure class="px-10 pt-10">
                         <img class="w-full h-40" src="./images/ellipse.png" alt="Shoes" class="rounded-xl" />
                     </figure>
                     <div class="card-body items-center text-center">
                         <h2 class="card-title" id="sixth-name">Ellipse</h2>
-                        <p>Aria (A) : 3.14ab</p>
+                        <p>Aria (A) : &pi;ab</p>
                         <div class="flex  md:flex-1">
-                            <input class="mb-4 w-1/4 rounded-lg px-5 " type="text" id="ellipse-firstInput-field"
+                            <input class="mb-4 w-2/4 rounded-lg px-3 " type="text" id="ellipse-firstInput-field"
                                 placeholder="a">
                             <p>cm</p>
-                            <input class="mb-4 w-1/4 rounded-lg px-5" type="text" id="ellipse-secondInput-field"
+                            <input class="mb-4 w-2/4 rounded-lg px-3" type="text" id="ellipse-secondInput-field"
                                 placeholder="b">
                             <p>cm</p>
                         </div>
@@ -189,20 +172,23 @@
                         </div>
                     </div>
                 </div>
+                <!-- sixth card end from here  -->
+
             </div>
+            <!-- card details start here  -->
             <div class="card-details w-full md:w-[35%] lg:w-[25%%] mx-auto ">
                 <h1 class="text-3xl text-center font-bold mt-5 text-gray-800  underline">Aria Calculation</h1>
                 <div class="overflow-x-auto">
                     <table class="table w-full">
                         <!-- head -->
-                        <thead>
+                        <!-- <thead>
                             <tr>
                                 <th>No</th>
                                 <th>Name</th>
                                 <th>Area</th>
                                 <th>Favorite Color</th>
                             </tr>
-                        </thead>
+                        </thead> -->
                         <tbody id="table-container">
                             <!-- row 1 -->
                             <!-- <tr>
@@ -215,8 +201,12 @@
                     </table>
                 </div>
             </div>
+            <!-- card details end here  -->
+
         </section>
     </main>
+    <!-- main end from here  -->
+
     <script src="./index.js"></script>
 </body>
 
