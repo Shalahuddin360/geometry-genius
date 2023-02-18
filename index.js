@@ -1,7 +1,8 @@
 /*****************for first card ********************/
-let serial = 0;
-document.getElementById('btn-first').addEventListener('click', function () {
-    serial += 1;
+     let serial = 0;
+    //step:1 add evemt listener to the btn-first button
+     document.getElementById('btn-first').addEventListener('click', function () {
+     serial += 1;
     //get the data from html using id
 
     const firstName = getTextElementById('first-name')
@@ -69,7 +70,7 @@ document.getElementById('btn-third').addEventListener('click', function () {
 /**************************** for fourth card ***************************** */
 document.getElementById('btn-fourth').addEventListener('click', function () {
     serial += 1;
-    //get the data from html using id
+    //get the data from html file using id
 
     const fourthName = getTextElementById('fourth-name')
     const rhombusFirstInputFieldValue = getFirstInputFieldValueById('rhombus-firstInput-field');
@@ -91,16 +92,21 @@ document.getElementById('btn-fourth').addEventListener('click', function () {
 /**************************** for fifth card ***************************** */
 document.getElementById('btn-fifth').addEventListener('click', function () {
     serial += 1;
-    //get the data from html using id
+    //get the fifthName  from html  file  using id
 
     const fifthName = getTextElementById('fifth-name')
+    //step:2 get  the ellipseInputFieldValue  from the ellipse-Input-field
+
     const pentagonFirstInputFieldValue = getFirstInputFieldValueById('pentagon-firstInput-field');
     const pentagonSecondInputFieldValue = getSecondInputFieldValueById('pentagon-secondInput-field');
+
     //  validation for fifth-card 
+
     if (isNaN(pentagonFirstInputFieldValue) || pentagonFirstInputFieldValue === '' || pentagonFirstInputFieldValue <= 0 || pentagonFirstInputFieldValue === String || isNaN(pentagonSecondInputFieldValue) || pentagonSecondInputFieldValue === '' || pentagonSecondInputFieldValue <= 0 || pentagonSecondInputFieldValue === String) {
         return alert('please provide a valid number')
     }
-    // multiply
+
+    //multiply
     const pentagonAreaTotal = (0.5 * pentagonFirstInputFieldValue * pentagonSecondInputFieldValue).toFixed(2);
 
     //show the data
@@ -109,21 +115,26 @@ document.getElementById('btn-fifth').addEventListener('click', function () {
     disabledButton('btn-fifth');
 })
 /**************************** for sixth card ***************************** */
-document.getElementById('btn-sixth').addEventListener('click', function () {
+    document.getElementById('btn-sixth').addEventListener('click', function () {
     serial += 1;
-    //get the data from html using id
+    //get the sixthName  from html  file  using id
 
-    const sixthName = getTextElementById('sixth-name')
+     const sixthName = getTextElementById('sixth-name')
+
+     //step:2 get  the ellipseInputFieldValue  from the ellipse-Input-field
+
     const ellipseFirstInputFieldValue = getFirstInputFieldValueById('ellipse-firstInput-field');
     const ellipseSecondInputFieldValue = getSecondInputFieldValueById('ellipse-secondInput-field');
+
     //  validation for sixth-card 
+
     if (isNaN(ellipseFirstInputFieldValue) || ellipseFirstInputFieldValue === '' || ellipseFirstInputFieldValue <= 0 || ellipseFirstInputFieldValue === String || isNaN(ellipseSecondInputFieldValue) || ellipseSecondInputFieldValue === '' || ellipseSecondInputFieldValue <= 0 || ellipseSecondInputFieldValue === String) {
         return alert('please provide a valid number')
     }
     // multiply
     const ellipseAreaTotal = (3.14 * ellipseFirstInputFieldValue * ellipseSecondInputFieldValue).toFixed(2);
 
-    //show the data
+    //show the data 
     displayData(sixthName, ellipseAreaTotal);
     //button disabled
     disabledButton('btn-sixth');
@@ -132,11 +143,12 @@ document.getElementById('btn-sixth').addEventListener('click', function () {
 
 // common function to display data 
 
-function getTextElementById(elementId) {
+   function getTextElementById(elementId) {
     const geometryOfName = document.getElementById(elementId).innerText;
     return geometryOfName;
-}
-function getFirstInputFieldValueById(inputFieldFirstId) {
+    }
+
+   function getFirstInputFieldValueById(inputFieldFirstId) {
 
 
 
@@ -147,7 +159,7 @@ function getFirstInputFieldValueById(inputFieldFirstId) {
     return geometryOfFirstInputFieldValue;
 
 }
-function getSecondInputFieldValueById(inputFieldSecondId) {
+   function getSecondInputFieldValueById(inputFieldSecondId) {
 
 
 
@@ -158,7 +170,7 @@ function getSecondInputFieldValueById(inputFieldSecondId) {
     return geometryOfSecondInputFieldValue;
 }
 
-function displayData(geometryOfName, geometryOfAreaTotal) {
+    function displayData(geometryOfName, geometryOfAreaTotal) {
     const container = document.getElementById('table-container')
     const tr = document.createElement('tr');
 
@@ -173,6 +185,7 @@ function displayData(geometryOfName, geometryOfAreaTotal) {
     container.appendChild(tr);
 }
 //   button disabled common function 
+
 function disabledButton(id) {
     document.getElementById(id).setAttribute('disabled', true);
 }
